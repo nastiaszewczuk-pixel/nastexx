@@ -1,0 +1,66 @@
+--- src/utils/useCreatorCollab.ts
++++ src/utils/useCreatorCollab.ts
+@@ -204,28 +204,49 @@
+   }
+ ];
+ 
+ export const DEFAULT_CREATOR_MEDIA: CreatorMediaItem[] = [
+   {
+     id: 'media-ugc-1',
+-    type: 'video',
+-    url: 'https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-a-neon-lit-room-41584-large.mp4',
++    type: 'embed',
++    url: 'https://www.instagram.com/reel/DY7WntUsL4U/embed/',
+     title: 'Fashion & Aesthetic Style Reel',
+     formatTag: 'UGC_REEL',
+     category: 'REELS',
+     metrics: '420K Views // 38K Likes',
+-    description: 'High-energy kinetic styling reel with rhythmic music cuts, fast wardrobe transitions, and high-contrast color grading.',
++    description: 'Custom creator reel on Instagram',
+     clientOrNiche: 'High-End Streetwear & Accessories',
+     aspectRatio: '9:16',
+     createdAt: Date.now() - 600000
+   },
+   {
+     id: 'media-ugc-2',
+-    type: 'video',
+-    url: 'https://assets.mixkit.co/videos/preview/mixkit-young-woman-vlogging-with-her-smartphone-in-the-city-43180-large.mp4',
++    type: 'embed',
++    url: 'https://www.instagram.com/reel/DVYxXIlDCOg/embed/',
+     title: 'Barcelona City & Workspace Vlogging',
+     formatTag: 'VLOG_INTEGRATION',
+     category: 'REELS',
+     metrics: '890K Views // 12.4K Saves',
+-    description: 'Organic storytelling lifestyle integration showcasing daily creative routine, coffee spots, and creative tech tools.',
++    description: 'Custom creator reel on Instagram',
++    clientOrNiche: 'Tech & Lifestyle Productivity',
++    aspectRatio: '9:16',
++    createdAt: Date.now() - 500000
++  },
++  {
++    id: 'media-ugc-3',
++    type: 'embed',
++    url: 'https://www.instagram.com/reel/DJm0iT-vRLL/embed/',
++    title: 'Creative Reel 3',
++    formatTag: 'UGC_REEL',
++    category: 'REELS',
++    metrics: 'Active Collab',
++    description: 'Custom creator reel on Instagram',
++    clientOrNiche: 'Tech & Lifestyle Productivity',
++    aspectRatio: '9:16',
++    createdAt: Date.now() - 500000
++  },
++  {
++    id: 'media-ugc-4',
++    type: 'embed',
++    url: 'https://www.instagram.com/reel/DFaoHW2oqsP/embed/',
++    title: 'Creative Reel 4',
++    formatTag: 'UGC_REEL',
++    category: 'REELS',
++    metrics: 'Active Collab',
++    description: 'Custom creator reel on Instagram',
+     clientOrNiche: 'Tech & Lifestyle Productivity',
+     aspectRatio: '9:16',
+     createdAt: Date.now() - 500000
+   }
+ ];
