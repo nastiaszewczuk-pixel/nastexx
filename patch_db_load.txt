@@ -1,0 +1,27 @@
+--- src/utils/useCreatorCollab.ts
++++ src/utils/useCreatorCollab.ts
+@@ -488,23 +488,8 @@
+         const proofsRequest = proofsStore.getAll();
+ 
+         mediaRequest.onsuccess = () => {
+           if (!isMounted) return;
+-          let customList: (CreatorMediaItem & { fileBlob?: Blob })[] = mediaRequest.result || [];
+-          if (customList.length > 0) {
+-            // Restore object URLs for items with stored Blobs
+-            const restoredList = customList.map(item => {
+-              if (item.fileBlob) {
+-                return {
+-                  ...item,
+-                  url: URL.createObjectURL(item.fileBlob)
+-                };
+-              }
+-              return item;
+-            });
+-            setMediaItems(restoredList);
+-          } else {
+-            setMediaItems(DEFAULT_CREATOR_MEDIA);
+-          }
++          setMediaItems(DEFAULT_CREATOR_MEDIA);
+         };
+ 
+         proofsRequest.onsuccess = () => {
